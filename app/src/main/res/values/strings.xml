@@ -8,6 +8,7 @@
 
 
     <string name="home_select"> I feel like going to " ...... " in " ...... " in " ...... " at " ...... "</string>
+    <string name="home_search_button"> FIND  A  PLACE</string>
 
 
 </resources>

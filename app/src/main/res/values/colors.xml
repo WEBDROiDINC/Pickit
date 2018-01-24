@@ -2,7 +2,8 @@
 <resources>
     <color name="colorPrimary">#4C99CF</color>
     <color name="colorPrimaryDark">#4876AA</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#4C99CF</color>
     <color name="colorBackground">#5B538C</color>
-    <color name="colorFab">#44D0CF</color>
+    <color name="colorFab">#4C99CF</color>
+    <color name="colorHomeText">#fff</color>
 </resources>
