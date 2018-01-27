@@ -6,4 +6,5 @@
     <color name="colorBackground">#5B538C</color>
     <color name="colorFab">#4C99CF</color>
     <color name="colorHomeText">#fff</color>
+    <color name="colorLogoBackground">#E82668</color>
 </resources>
