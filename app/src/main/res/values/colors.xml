@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#4876AA</color>
     <color name="colorAccent">#4C99CF</color>
     <color name="colorBackground">#5B538C</color>
+    <color name="colorLogoBackground">#4c5769</color>
     <color name="colorFab">#4C99CF</color>
-    <color name="colorHomeText">#fff</color>
-    <color name="colorLogoBackground">#E82668</color>
+    <color name="colorHomeText">#ffffff</color>
+
 </resources>
