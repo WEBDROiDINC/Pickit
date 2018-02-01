@@ -11,6 +11,7 @@
     <string name="home_search_button"> FIND  A  PLACE</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="logo_name">Pick it</string>
 
 
 </resources>

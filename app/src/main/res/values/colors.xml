@@ -7,5 +7,6 @@
     <color name="colorLogoBackground">#4c5769</color>
     <color name="colorFab">#4C99CF</color>
     <color name="colorHomeText">#ffffff</color>
+    <color name="colorStatusBarStart">#1A597C</color>
 
 </resources>
