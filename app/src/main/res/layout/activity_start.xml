@@ -4,55 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/custom_background"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context="www.webdroid.org.pickit.start">
-
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="50dp"
-        android:contentDescription="applogo"
-        android:scaleType="centerCrop"
-        android:src="@drawable/logo2_gray"
-        app:srcCompat="@drawable/logo2_gray" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="11dp"
-        android:gravity="center"
-        android:text="@string/logo_name"
-        android:textColor="@color/colorHomeText"
-        android:textSize="60sp" />
+    tools:context="www.webdroid.org.pickit.StartActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:gravity="center"
+        android:background="@color/colorLogoBackground"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="239dp"
+            android:layout_height="164dp"
+            android:contentDescription="applogo"
+            android:paddingTop="50dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo2_gray"
+            app:srcCompat="@drawable/logo2_gray" />
+
+       <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="11dp"
+           android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="@string/logo_name"
+        android:textColor="@color/colorHomeText"
+        android:textSize="70sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:background="@color/colorSplashBackground"
         android:orientation="vertical"
         android:padding="20dp">
 
         <Button
-            android:id="@+id/buttonGetstartedStart"
+            android:id="@+id/buttonSignUpStart"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_2"
+            android:text="SIGN UP"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/custom_button"
-            android:text="Get Started"
             android:textColor="@color/colorHomeText"
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/buttonSignUpStart"
+            android:id="@+id/buttonGetstartedStart"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_button_2"
-            android:text="SIGN UP"
-            android:textColor="@color/colorHomeText"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:text="Get Started"
+            android:textColor="@color/colorLogoBackground"
             android:textSize="18sp" />
+
     </LinearLayout>
 
 </LinearLayout>

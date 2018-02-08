@@ -4,25 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/custom_background"
+    android:background="@color/colorSplashBackground"
     android:gravity="center"
     android:orientation="vertical"
     tools:context="www.webdroid.org.pickit.SplashScreen">
 
-    <ImageView
+  <!--  <ImageView
+        android:id="@+id/imageViewSplash"
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/logo2" />
+        android:layout_marginTop="100dp"
+        android:contentDescription="logo"
+        android:src="@drawable/logo2" /> -->
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewSplash"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:elevation="11dp"
         android:gravity="center"
+        android:paddingTop="100dp"
         android:text="@string/logo_name"
-        android:textColor="@color/colorHomeText"
-        android:textSize="60sp" />
+        android:textColor="@color/colorLogoBackground"
+        android:textSize="80sp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="4dp"
+        android:textColor="@color/colorLogoBackground"
+        android:gravity="center|bottom"
+        android:text="@string/webdroidCopyRights" />
 
 </LinearLayout>
