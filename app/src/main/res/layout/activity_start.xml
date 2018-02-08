@@ -12,8 +12,11 @@
     <ImageView
         android:layout_width="300dp"
         android:layout_height="250dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/logo2" />
+        android:layout_marginTop="50dp"
+        android:contentDescription="applogo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo2_gray"
+        app:srcCompat="@drawable/logo2_gray" />
 
     <TextView
         android:id="@+id/textView"
@@ -33,7 +36,7 @@
         android:padding="20dp">
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/buttonGetstartedStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -43,7 +46,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/buttonSignUpStart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/custom_button_2"
