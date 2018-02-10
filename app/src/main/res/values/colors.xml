@@ -4,8 +4,12 @@
     <color name="colorPrimaryDark">#4D586A</color>
     <color name="colorAccent">#4C99CF</color>
     <color name="colorBackground">#5B538C</color>
+    <color name="colorSignUpBackground">#D7D5D6</color>
     <color name="colorLogoBackground">#4D586A</color>
     <color name="colorFab">#4C99CF</color>
+    <color name="colorSignUpButton">#E4E4E4</color>
+    <color name="colorLoginButton">#394458</color>
+    <color name="colorSignUpEditText">#F4F4F4</color>
     <color name="colorHomeText">#ffffff</color>
     <color name="colorStatusBarStart">#1A597C</color>
     <color name="colorSplashBackground">#D9D7D8</color>

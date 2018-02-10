@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSignUpBackground"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    tools:context="www.webdroid.org.pickit.signUp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="FREE ACCOUNT" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorSignUpEditText"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="left|center_horizontal"
+            android:hint="User name "
+            android:inputType="textPersonName"
+            android:paddingStart="15dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            style="@style/Widget.AppCompat.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="left|center_horizontal"
+            android:hint="Passwrod"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_edittext"
+            android:ems="10"
+            android:gravity="left|center_horizontal"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/colorSignUpButton"
+            android:text="SIGN UP NOW" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ConcernedPortionofScreen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:background="@color/Black"
+        android:orientation="vertical">
+
+        <!-- Parent FrameLayout 'FL' -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <!-- This is Layout 'LL'
+                 This is where you will place your image & the nice bg
+            -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="25dp"
+                android:background="@color/colorSignUpBackground"/>
+            />
+
+            <!-- BL = 50dp -->
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:background="@drawable/custom_button_2"
+                android:text="Login"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+        </FrameLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
