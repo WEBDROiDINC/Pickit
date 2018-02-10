@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:gravity="center"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -35,11 +35,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:gravity="center"
-        android:text="FREE ACCOUNT" />
+        android:text="@string/free_account" />
 
     <LinearLayout
         android:layout_width="300dp"
-        android:layout_height="240dp"
+        android:layout_height="230dp"
         android:layout_marginTop="25dp"
         android:background="@color/colorSignUpEditText"
         android:orientation="vertical">
@@ -52,10 +52,11 @@
             android:background="@drawable/custom_edittext"
             android:ems="10"
             android:fontFamily="sans-serif"
-            android:gravity="left|center_horizontal"
-            android:hint="User name "
+            android:gravity="start|center_horizontal"
+            android:hint="@string/user_name"
             android:inputType="textPersonName"
             android:paddingStart="15dp"
+            android:paddingEnd="0dp"
             android:textSize="17sp" />
 
         <EditText
@@ -65,10 +66,11 @@
             android:layout_height="60dp"
             android:background="@drawable/custom_edittext"
             android:ems="10"
-            android:gravity="left|center_horizontal"
-            android:hint="Passwrod"
+            android:gravity="start|center_horizontal"
+            android:hint="@string/passwrod"
             android:inputType="textPassword"
             android:paddingStart="15dp"
+            android:paddingEnd="0dp"
             android:textSize="17sp" />
 
         <EditText
@@ -77,19 +79,20 @@
             android:layout_height="60dp"
             android:background="@drawable/custom_edittext"
             android:ems="10"
-            android:gravity="left|center_horizontal"
-            android:hint="Confirm Password"
+            android:gravity="start|center_horizontal"
+            android:hint="@string/confirm_password"
             android:inputType="textPassword"
             android:paddingStart="15dp"
+            android:paddingEnd="0dp"
             android:textSize="17sp" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="60dp"
             android:layout_marginTop="-10dp"
             android:background="@color/colorSignUpButton"
-            android:text="SIGN UP NOW" />
+            android:text="@string/sign_up_now" />
     </LinearLayout>
 
     <LinearLayout
@@ -114,8 +117,6 @@
                 android:layout_height="match_parent"
                 android:layout_marginBottom="25dp"
                 android:background="@color/colorSignUpBackground"/>
-            />
-
             <!-- BL = 50dp -->
             <Button
                 android:layout_width="150dp"
@@ -123,7 +124,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_gravity="bottom|center_horizontal"
                 android:background="@drawable/custom_button_2"
-                android:text="Login"
+                android:text="@string/login"
                 android:textSize="18sp"
                 android:textColor="@android:color/white" />
         </FrameLayout>
