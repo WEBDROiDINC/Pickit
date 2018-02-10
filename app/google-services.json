@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "336766306051",
+    "firebase_url": "https://pickit-f8f4c.firebaseio.com",
+    "project_id": "pickit-f8f4c",
+    "storage_bucket": "pickit-f8f4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336766306051:android:792017b62bce9925",
+        "android_client_info": {
+          "package_name": "www.webdroid.org.pickit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336766306051-0027res44ethdu5cc34d61pc1tvketrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "www.webdroid.org.pickit",
+            "certificate_hash": "3fb5b8a0da78c62dc135aa6774825cd22f6b6cfb"
+          }
+        },
+        {
+          "client_id": "336766306051-brc69ob6qg67i65o6ttm2u325101lgqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVtKAGypncdcPQaQxQ5EXtYk-T7dSbiLU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336766306051-brc69ob6qg67i65o6ttm2u325101lgqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
