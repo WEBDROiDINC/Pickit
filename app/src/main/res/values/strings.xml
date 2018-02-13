@@ -20,6 +20,11 @@
     <string name="passwrod">Password</string>
     <string name="user_name">User name</string>
     <string name="free_account">FREE ACCOUNT</string>
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_Repassword">Confirm Password</string>
+    <string name="password_too_short">Password too short, enter minimum 6 characters!</string>
+    <string name="passwords_dont_match">Passwords Don\'t Match!</string>
 
 
 </resources>

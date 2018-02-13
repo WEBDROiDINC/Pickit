@@ -45,7 +45,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/UserName"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -60,7 +60,7 @@
             android:textSize="17sp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/Password"
             style="@style/Widget.AppCompat.AutoCompleteTextView"
             android:layout_width="match_parent"
             android:layout_height="60dp"
@@ -74,7 +74,7 @@
             android:textSize="17sp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/RePassword"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/custom_edittext"
@@ -92,7 +92,8 @@
             android:layout_height="60dp"
             android:layout_marginTop="-10dp"
             android:background="@color/colorSignUpButton"
-            android:text="@string/sign_up_now" />
+            android:text="@string/sign_up_now"
+            android:onClick="Signup"/>
     </LinearLayout>
 
     <LinearLayout
