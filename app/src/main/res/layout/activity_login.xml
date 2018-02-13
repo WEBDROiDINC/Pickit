@@ -92,15 +92,15 @@
                 android:background="@color/colorSignUpBackground"/>
             <!-- BL = 50dp -->
             <Button
-                android:id="@+id/buttonLoginSignUp"
+                android:id="@+id/buttonSignUpLogin"
                 android:layout_width="150dp"
                 android:layout_height="30dp"
-                android:layout_marginBottom="8dp"
                 android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="8dp"
                 android:background="@drawable/custom_button_2"
                 android:text="@string/sign_up"
-                android:textSize="18sp"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
         </FrameLayout>
     </LinearLayout>
 

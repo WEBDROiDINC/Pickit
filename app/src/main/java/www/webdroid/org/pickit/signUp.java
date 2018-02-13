@@ -51,6 +51,8 @@ public class signUp extends AppCompatActivity {
 
     private EditText RePassword_EditText_Signup;
 
+    private Button Login;
+
 
     private FirebaseAuth mAuth;
 
@@ -59,9 +61,18 @@ public class signUp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        Username_EditText_SignUp =(EditText) findViewById(R.id.UserName);
-        Password_EditText_SignUp = (EditText)  findViewById(R.id.Password);
-        RePassword_EditText_Signup = (EditText) findViewById(R.id.RePassword);
+        Username_EditText_SignUp =(EditText) findViewById(R.id.editTextUserNameSignup);
+        Password_EditText_SignUp = (EditText)  findViewById(R.id.editTextPasswordSignup);
+        RePassword_EditText_Signup = (EditText) findViewById(R.id.editTextConPasswordSignup);
+        Login = (Button)findViewById(R.id.buttonLoginSignUp);
+
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gto = new Intent(signUp.this,Login.class);
+                startActivity(gto);
+            }
+        });
 
         mAuth = FirebaseAuth.getInstance();
 
