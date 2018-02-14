@@ -181,12 +181,12 @@ public class signUp extends AppCompatActivity {
             return false;
         }
 
-        //vaidating the confirmation password
+       /* //vaidating the confirmation password
         if(!Password.equals(Repassword))
         {
             Toast.makeText(signUp.this , R.string.passwords_dont_match,Toast.LENGTH_SHORT).show();
             return false;
-        }
+        }*/
         return true;
 
 
