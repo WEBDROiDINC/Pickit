@@ -8,6 +8,9 @@
     <string name="action_settings">Settings</string>
 
 
+    <string name="facebook_app_id">805858019598114</string>
+    <string name="fb_login_protocol_scheme">fb805858019598114</string>
+
     <string name="home_select"> I feel like going to " ...... " in " ...... " in " ...... " at " ...... "</string>
     <string name="home_search_button"> FIND  A  PLACE</string>
     <string name="title_activity_main2">Main2Activity</string>
