@@ -14,26 +14,127 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:gravity="center_vertical"
-        >
+        android:gravity="center_vertical">
 
-    <TextView
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:gravity="center"
-        android:text="@string/home_select"
-        android:textAlignment="center"
-        android:textColor="@color/colorLogoBackground"
-        android:textSize="40sp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="RtlCompat" />
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:paddingTop="30dp">
 
-    <Button
+            <TextView
+                android:id="@+id/textViewToMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="30dp"
+                android:gravity="left"
+                android:text="@string/home_select"
+                android:textAlignment="gravity"
+                android:textColor="@color/colorLogoBackground"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/l2"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="44dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerPlace1Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:popupBackground="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/textViewIn1Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in"
+                    android:textColor="@color/colorLogoBackground"
+                    android:textSize="35sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerPlace2Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:padding="10dp"
+                    android:popupBackground="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/l1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewIn2Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in"
+                    android:textColor="@color/colorLogoBackground"
+                    android:textSize="35sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerPlace3Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:popupBackground="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:id="@+id/textViewAtMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="at"
+                    android:textColor="@color/colorLogoBackground"
+                    android:textSize="35sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/spinnerPlace4Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    style="@style/MySpinnerLook"
+                    android:popupBackground="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <Button
         android:id="@+id/buttonFindaplaceMain"
         android:layout_width="300dp"
         android:layout_height="70dp"

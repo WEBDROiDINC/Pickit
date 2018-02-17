@@ -11,7 +11,7 @@
     <string name="facebook_app_id">805858019598114</string>
     <string name="fb_login_protocol_scheme">fb805858019598114</string>
 
-    <string name="home_select"> I feel like going to " ...... " in " ...... " in " ...... " at " ...... "</string>
+    <string name="home_select"> I feel like going to"</string>
     <string name="home_search_button"> FIND  A  PLACE</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="section_format">Hello World from section: %1$d</string>
@@ -30,4 +30,16 @@
     <string name="passwords_dont_match">Passwords Don\'t Match!</string>
 
 
+    <string-array name="placeSpinnerMain">
+        <item >Cairo</item>
+        <item >Obour</item>
+        <item >Giza</item>
+        <item >Qena</item>
+        <item >Luxur</item>
+        <item >Sinai</item>
+        <item >Giza</item>
+    </string-array>
+
 </resources>
+
+<!-- I feel like going to " ...... " in " ...... " in " ...... " at " ......-->

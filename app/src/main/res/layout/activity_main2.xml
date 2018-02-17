@@ -8,43 +8,7 @@
     android:padding="5dp"
     tools:context="www.webdroid.org.pickit.Main2Activity">
 
-    <LinearLayout
+    <GridView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:alpha="0.4"
-            android:background="@drawable/giza"
-            android:cropToPadding="false"
-            android:scaleType="centerCrop"
-            android:text="GIZA"
-            android:textSize="50sp"
-            android:textColor="#000"/>
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="1"
-            android:background="@drawable/custom_button"
-            android:text="Button" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/custom_button"
-        android:text="Button" />
-
+        android:layout_height="match_parent" />
 </LinearLayout>

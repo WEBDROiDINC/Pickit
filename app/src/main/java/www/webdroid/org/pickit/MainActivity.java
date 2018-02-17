@@ -1,6 +1,7 @@
 package www.webdroid.org.pickit;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,10 +14,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,AdapterView.OnItemSelectedListener {
 
     Button findPlaceButton;
     @Override
@@ -25,6 +30,38 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+        Spinner spinner1 = findViewById(R.id.spinnerPlace1Main);
+        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,R.array.placeSpinnerMain, R.layout.custom_spinner);
+        adapter1.setDropDownViewResource(R.layout.custom_spinner_item);
+        spinner1.setAdapter(adapter1);
+        spinner1.setOnItemSelectedListener(this);
+
+        Spinner spinner2 = findViewById(R.id.spinnerPlace2Main);
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,R.array.placeSpinnerMain,R.layout.custom_spinner);
+        adapter2.setDropDownViewResource(R.layout.custom_spinner_item);
+        spinner2.setAdapter(adapter2);
+        spinner2.setOnItemSelectedListener(this);
+
+        Spinner spinner3 = findViewById(R.id.spinnerPlace3Main);
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,R.array.placeSpinnerMain,R.layout.custom_spinner);
+        adapter3.setDropDownViewResource(R.layout.custom_spinner_item);
+        spinner3.setAdapter(adapter3);
+        spinner3.setOnItemSelectedListener(this);
+
+        Spinner spinner4 = findViewById(R.id.spinnerPlace4Main);
+        ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,R.array.placeSpinnerMain,R.layout.custom_spinner);
+        adapter4.setDropDownViewResource(R.layout.custom_spinner_item);
+        spinner4.setAdapter(adapter4);
+        spinner4.setOnItemSelectedListener(this);
+
+
+
+
+
+
+
 
         findPlaceButton = (Button) findViewById(R.id.buttonFindaplaceMain);
         findPlaceButton.setOnClickListener(new View.OnClickListener() {
@@ -110,5 +147,16 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String s =parent.getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(),s,Toast.LENGTH_SHORT);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }
